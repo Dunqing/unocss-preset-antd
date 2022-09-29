@@ -1,0 +1,59 @@
+{
+  "name": "unocss-preset-antd",
+  "version": "0.0.1-beta.0",
+  "packageManager": "pnpm@7.11.0",
+  "description": "antd theme",
+  "author": "Dunqing <dengqing0821@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/Dunqing/unocss-preset-antd#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dunqing/unocss-preset-antd.git",
+    "directory": "packages/preset-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/Dunqing/unocss-preset-antd/issues"
+  },
+  "keywords": [
+    "unocss",
+    "unocss-preset",
+    "unocss-theme",
+    "antd",
+    "antd-theme"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "*.css"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "test": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "pnpm run lint --fix",
+    "release": "bumpp package.json packages/**/package.json"
+  },
+  "peerDependencies": {
+    "unocss": "^0.45.25"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.27.0",
+    "@types/node": "^18.7.23",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.24.0",
+    "unbuild": "^0.8.11",
+    "unocss": "^0.45.25",
+    "vitest": "^0.23.4"
+  }
+}
