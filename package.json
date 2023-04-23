@@ -46,7 +46,7 @@
     "release": "bumpp package.json packages/**/package.json"
   },
   "peerDependencies": {
-    "unocss": ">= 0.45.25"
+    "unocss": "^0.51.0"
   },
   "devDependencies": {
     "@ant-design/colors": "^7.0.0",
