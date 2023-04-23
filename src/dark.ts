@@ -29,7 +29,7 @@ export interface PresetAntdDarkOptions {
   /**
    * Base error color
    *
-   * @default #f5222d
+   * @default #ff4d4f
    */
   error?: string
   /**
@@ -46,7 +46,7 @@ export function dark(options: PresetAntdDarkOptions = {}): Theme {
     primary = '#1677ff',
     success = '#52c41a',
     warning = '#faad14',
-    error = '#f5222d',
+    error = '#ff4d4f',
     info = '#1677ff',
   } = options
 

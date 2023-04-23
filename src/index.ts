@@ -6,7 +6,7 @@ import { dark } from './dark'
 
 export interface PresetAntdOptions {
   /**
-   * Used to generate Base colors
+   * Used to generate light colors
    *
    * @default #ffffff
    */
@@ -38,7 +38,7 @@ export interface PresetAntdOptions {
   /**
    * Base error color
    *
-   * @default #f5222d
+   * @default #ff4d4f
    */
   error?: string
   /**
@@ -56,7 +56,7 @@ export function presetAntd(options: PresetAntdOptions = {}): Preset<Theme> {
     primary = '#1677ff',
     success = '#52c41a',
     warning = '#faad14',
-    error = '#f5222d',
+    error = '#ff4d4f',
     info = '#1677ff',
   } = options
 
