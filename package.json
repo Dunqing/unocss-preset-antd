@@ -2,7 +2,7 @@
   "name": "unocss-preset-antd",
   "version": "0.0.1-beta.0",
   "packageManager": "pnpm@8.3.1",
-  "description": "antd theme",
+  "description": "unocss + antd",
   "author": "Dunqing <dengqing0821@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/Dunqing/unocss-preset-antd#readme",
@@ -38,25 +38,27 @@
   ],
   "scripts": {
     "build": "unbuild",
-    "stub": "unbuild --stub",
-    "test": "vitest",
     "lint": "eslint .",
     "lint:fix": "pnpm run lint --fix",
-    "typecheck": "tsc --noEmit",
-    "release": "bumpp package.json packages/**/package.json"
+    "release": "bumpp package.json packages/**/package.json",
+    "stub": "unbuild --stub",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "unocss": "^0.51.0"
   },
-  "devDependencies": {
+  "dependencies": {
     "@ant-design/colors": "^7.0.0",
+    "unocss": "^0.51.6",
+    "unocss-preset-theme": "^0.6.0"
+  },
+  "devDependencies": {
     "@antfu/eslint-config": "^0.38.5",
     "@types/node": "^18.16.0",
     "bumpp": "^9.1.0",
     "eslint": "^8.39.0",
     "unbuild": "^1.2.1",
-    "unocss": "^0.51.6",
-    "unocss-preset-theme": "^0.6.0",
     "vitest": "^0.30.1"
   }
 }
