@@ -1,10 +1,10 @@
 import type { Preset } from 'unocss'
 import type { Theme } from 'unocss/preset-mini'
-import { presetTheme } from 'unocss-preset-theme'
+import { type PresetThemeOptions, presetTheme } from 'unocss-preset-theme'
 import { light } from './light'
 import { dark } from './dark'
 
-export interface PresetAntdOptions {
+export interface PresetAntdOptions extends Omit<PresetThemeOptions<Theme>, 'theme'> {
   /**
    * Used to generate light colors
    *
@@ -51,6 +51,8 @@ export interface PresetAntdOptions {
 
 export function presetAntd(options: PresetAntdOptions = {}): Preset<Theme> {
   const {
+    prefix = '--un-preset-antd',
+    selectors,
     lightBackgroundColor = '#ffffff',
     darkBackgroundColor = '#141414',
     primary = '#1677ff',
@@ -61,6 +63,8 @@ export function presetAntd(options: PresetAntdOptions = {}): Preset<Theme> {
   } = options
 
   return presetTheme<Theme>({
+    prefix,
+    selectors,
     theme: {
       light: light({
         backgroundColor: lightBackgroundColor,

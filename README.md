@@ -32,6 +32,14 @@ We recommend you to use [tailwind compat reset](https://unocss.dev/guide/style-r
 
 You can a options object to the preset.
 
+### prefix
+
+This option is extended from [unocss-perset-theme](https://github.com/Dunqing/unocss-preset-theme). Defaults to `--un-preset-antd`.
+
+### selectors
+
+This option is extended from [unocss-perset-theme](https://github.com/Dunqing/unocss-preset-theme) and use its default value.
+
 ### lightBackgroundColor
 
 Used to generate light theme colors. Defaults to `#ffffff`.
