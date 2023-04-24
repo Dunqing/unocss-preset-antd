@@ -16,7 +16,7 @@ We use `uno.config.ts` as an example below.
 
 ```ts
 import { defineConfig, presetUno } from 'unocss'
-import presetAntd from 'unocss-preset-antd'
+import { presetAntd } from 'unocss-preset-antd'
 
 export default defineConfig({
   presets: [
