@@ -1,6 +1,6 @@
 {
   "name": "unocss-preset-antd",
-  "version": "0.0.1-beta.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.6.12",
   "description": "unocss + antd",
   "author": "Dunqing <dengqing0821@gmail.com>",
