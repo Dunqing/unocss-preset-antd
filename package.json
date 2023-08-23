@@ -1,7 +1,7 @@
 {
   "name": "unocss-preset-antd",
   "version": "0.0.1-beta.0",
-  "packageManager": "pnpm@8.3.1",
+  "packageManager": "pnpm@8.6.12",
   "description": "unocss + antd",
   "author": "Dunqing <dengqing0821@gmail.com>",
   "license": "MIT",
@@ -24,9 +24,12 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "types": {
+        "import": "./dist/index.d.cts",
+        "require": "./dist/index.d.mts"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     }
   },
   "main": "dist/index.cjs",
@@ -46,19 +49,20 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "unocss": "^0.51.0"
+    "unocss": ">=0.52"
   },
   "dependencies": {
     "@ant-design/colors": "^7.0.0",
-    "unocss": "^0.51.6",
-    "unocss-preset-theme": "^0.6.0"
+    "unocss": "^0.55.2",
+    "unocss-preset-theme": "^0.9.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.38.5",
-    "@types/node": "^18.16.0",
-    "bumpp": "^9.1.0",
-    "eslint": "^8.39.0",
-    "unbuild": "^1.2.1",
-    "vitest": "^0.30.1"
+    "@antfu/eslint-config": "^0.40.2",
+    "@types/node": "^18.17.8",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.47.0",
+    "typescript": "^5.1.6",
+    "unbuild": "^2.0.0",
+    "vitest": "^0.34.2"
   }
 }
